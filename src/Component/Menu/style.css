@@ -1,0 +1,134 @@
+.menu{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .toggle{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background: var(--deep-white);
+    color: var(--black);
+    border-radius: 50%;
+    box-shadow: 0 3px 4px rgba(34, 116, 165, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: 1.25s;
+    z-index: 1000;
+}
+
+.menu.active .toggle{
+    transform: rotate(90deg);
+    box-shadow: 0 6px 8px rgba(34, 116, 165, 0.25), 0 0 0 2px var(--deep-blue), 0 0 0 8px var(--deep-white);
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    list-style: none;
+    transform-origin: 70px;
+    scale: 0;
+    background: var(--light-blue);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+.menu.active ul li{
+    scale: 1;
+}
+
+.menu.active ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--light-blue);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.menu.active ul li a:hover{
+    font-size: 2.25rem;
+    box-shadow: 0 6px 8px rgba(34, 116, 165, 0.25), 0 0 0 2px var(--deep-blue), 0 0 0 8px var(--deep-white);
+}
+
+.menu-text{
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 5px;;
+    animation: anim 250ms ease-in-out;
+}
+
+@keyframes anim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .menu{
+        right: 20px;
+        top: 20px;
+        width: 280px;
+        height: 280px;
+    }
+    .menu .toggle{
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        font-size: 2em;
+    }
+
+    .menu ul li{
+        transform-origin: 140px;
+        width: 60px;
+        height: 60px;
+        font-size: 1.75rem;
+    }
+    
+    .menu.active ul li{
+        scale: 1;
+    }
+    
+    .menu.active ul li a{
+        width: 60px;
+        height: 60px;
+        font-size: 1.75rem;
+    }
+    .menu-text{
+        font-size: 3em;
+    }
+    
+}
+

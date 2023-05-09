@@ -1,0 +1,44 @@
+/****** 
+  Header
+******/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    z-index: 999;
+    transition: all 500ms;
+}
+  
+header > .logo{
+    max-width: 60px;
+    margin-left: 15px;
+}
+
+header > .logo > .desk-logo{
+  display: none;
+}
+
+@media screen and (min-width: 1024px){
+  header{
+    justify-content: space-around;
+    height: 90px;
+  }
+
+  header > .logo{
+    max-width: 160px;
+  }
+  
+  header > .logo > .desk-logo{
+    display: block;
+    
+  }
+  header > .logo > .mobile-logo{
+    display: none;
+  }  
+}

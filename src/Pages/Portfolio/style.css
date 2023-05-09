@@ -1,0 +1,52 @@
+.image-item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;    
+}
+
+.image-item:hover{
+    box-shadow: 0px 0px 10px 0px var(--deep-black);
+}
+
+.image-item img{
+    width: 100%;
+    transform: scale(1);
+    transition: all 350ms;
+}
+
+.image-item:hover img{
+    transform: scale(1.5);
+    transition: all 350ms;
+}
+
+.image-item > .row-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.45);   
+    box-shadow: 0 0 10px 1px rgba(20, 129, 186, 0.25);
+    backdrop-filter: blur(15px);
+    opacity: 0;
+    transition: all 250ms;
+}
+
+.image-item:hover > .row-container{
+    opacity: 1;
+    box-shadow: 0 0 10px 1px rgba(20, 129, 186, 0.45);
+    transition: all 250ms;
+} 
+
+.image-item > .row-container > svg{
+    fill: var(--black);
+    width: 25px;
+    height: 25px;
+}
+
+.image-item > .row-container > span{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+

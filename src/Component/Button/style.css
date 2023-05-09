@@ -1,0 +1,51 @@
+/****** 
+  Button
+******/
+
+.button {
+    position: relative;
+    margin: 15px;
+    font-family: "Quicksand";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    height: auto;
+    background: transparent;
+    color: var(--deep-black);
+    -webkit-text-stroke: 1px var(--deep-black);
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: opacity 500ms;
+}
+  
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: '';
+    color: var(--light-purple);
+    width: 0%;
+    inset: 0;
+    border-right: 6px solid var(--light-purple);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--light-purple);
+}
+  
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--light-purple))
+}
+
+
+@media screen and (min-width: 768px){
+    .button{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .button{
+        font-size: 1.6em;
+    }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "header": {
+      "title": "Wordpress éco",
+      "subtitle": "À partir de",
+      "price": "600"
+    },
+    "body": {
+      "listItems": [
+        "Choix parmis 3 thèmes gratuits",
+        "Installation de google analytics",
+        "Intégration des textes écrits par l'entreprise",
+        "Mise en place du SEO pour les moteurs de recherche"
+      ]
+    }
+  },
+  {
+    "header": {
+      "title": "Wordpress premium",
+      "subtitle": "À partir de",
+      "price": "1100"
+    },
+    "body": {
+      "listItems": [
+        "Choix parmis 10 thèmes Wordpress",
+        "Personnalisation du webdesign selon votre charte graphique",
+        "Rédaction des textes par un expert SEO",
+        "Suivi de la fréquentation du site pendant 1 an avec les outils google",
+        "Nom de domaine offert pendant 1 an",
+        "Intégration des textes écrits par l'entreprise",
+        "Publication dans 10 annuaires de sites pour accélérer le référencement"
+      ]
+    }
+  },
+  {
+    "header": {
+      "title": "React",
+      "subtitle": "À partir de",
+      "price": "1600"
+    },
+    "body": {
+      "listItems": [
+        "Personnalisation et performances optimale de votre site",
+        "Rédaction des textes par un expert SEO",
+        " Suivi de la fréquentation du site pendant 1 an avec les outils google",
+        "Nom de domaine offert pendant 1 an",
+        "Publication dans 10 annuaires de sites pour accélérer le référencement"
+      ]
+    }
+  }
+]

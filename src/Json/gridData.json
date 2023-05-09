@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "title": "Projet 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla leo sit amet nibh pretium, vitae varius nisl luctus. Nam posuere est nulla, ac varius lorem ullamcorper nec. Proin non justo non risus blandit malesuada id ut lectus.",
+      "imageUrl": "/img/estetique-min.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Projet 2",
+      "description": "Aliquam erat volutpat. Aenean vitae congue ipsum. Sed auctor ex vel purus feugiat, eu bibendum dolor faucibus. Praesent vitae nisi elit. Proin aliquam libero vel nulla consequat euismod. Nam nec dui tellus.",
+      "imageUrl": "/img/pet-min.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Projet 3",
+      "description": "Notre objectif principal était de créer un site web moderne et élégant qui reflète l'ambiance unique du restaurant tout en présentant les différents plats proposés. Nous avons atteint cet objectif en utilisant des images de haute qualité et des descriptions détaillées des plats. De plus, nous avons intégré une plateforme de réservation en ligne qui a permis aux clients de réserver facilement une table.",
+      "imageUrl": "/img/resto-min.jpg",
+      "tech": [
+        "FaReact",
+        "FaBootstrap",
+        "FaSymfony"
+      ],
+      "link": "www.monresto.com",
+      "linkDescription": "Les visiteurs peuvent y explorer les différentes sections du site, réserver une table en ligne et découvrir les plats uniques proposés par le restaurant."
+    },
+    {
+      "id": 4,
+      "title": "Projet 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla leo sit amet nibh pretium, vitae varius nisl luctus. Nam posuere est nulla, ac varius lorem ullamcorper nec. Proin non justo non risus blandit malesuada id ut lectus.",
+      "imageUrl": "/img/spa-min.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Projet 5",
+      "description": "Aliquam erat volutpat. Aenean vitae congue ipsum. Sed auctor ex vel purus feugiat, eu bibendum dolor faucibus. Praesent vitae nisi elit. Proin aliquam libero vel nulla consequat euismod. Nam nec dui tellus.",
+      "imageUrl": "/img/resto3-min.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Projet 6",
+      "description": "Suspendisse potenti. Vivamus eu aliquam ipsum. Nullam pulvinar metus sit amet leo volutpat, vel semper sapien luctus. Curabitur volutpat nibh vel urna ornare, in blandit purus volutpat.",
+      "imageUrl": "/img/resto2-min.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Projet 7",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla leo sit amet nibh pretium, vitae varius nisl luctus. Nam posuere est nulla, ac varius lorem ullamcorper nec. Proin non justo non risus blandit malesuada id ut lectus.",
+      "imageUrl": "/img/pizza-min.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Projet 8",
+      "description": "Aliquam erat volutpat. Aenean vitae congue ipsum. Sed auctor ex vel purus feugiat, eu bibendum dolor faucibus. Praesent vitae nisi elit. Proin aliquam libero vel nulla consequat euismod. Nam nec dui tellus.",
+      "imageUrl": "/img/gaming.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Projet 9",
+      "description": "Suspendisse potenti. Vivamus eu aliquam ipsum. Nullam pulvinar metus sit amet leo volutpat, vel semper sapien luctus. Curabitur volutpat nibh vel urna ornare, in blandit purus volutpat.",
+      "imageUrl": "/img/festival.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Projet 10",
+      "description": "Suspendisse potenti. Vivamus eu aliquam ipsum. Nullam pulvinar metus sit amet leo volutpat, vel semper sapien luctus. Curabitur volutpat nibh vel urna ornare, in blandit purus volutpat.",
+      "imageUrl": "/img/barber.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Projet 11",
+      "description": "Suspendisse potenti. Vivamus eu aliquam ipsum. Nullam pulvinar metus sit amet leo volutpat, vel semper sapien luctus. Curabitur volutpat nibh vel urna ornare, in blandit purus volutpat.",
+      "imageUrl": "/img/space.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Projet 12",
+      "description": "Suspendisse potenti. Vivamus eu aliquam ipsum. Nullam pulvinar metus sit amet leo volutpat, vel semper sapien luctus. Curabitur volutpat nibh vel urna ornare, in blandit purus volutpat.",
+      "imageUrl": "/img/info.jpg"
+    }
+]

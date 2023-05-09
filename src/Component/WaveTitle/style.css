@@ -1,0 +1,46 @@
+.wave-title{
+    position: relative;
+    width: 100%;
+    height:10vh;
+}
+
+.wave-title > h1 {
+  font-size: 1.5em;
+  width: 100%;
+  max-width: 768px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wave-title > h1:nth-child(1) {
+  color: var(--deep-black);
+  -webkit-text-stroke: 2px var(--deep-black);
+}
+
+.wave-title > h1:nth-child(2) {
+  color: var(--light-blue);
+  animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate 
+{
+  0%, 100% 
+  {
+    clip-path: polygon(0% 15%, -15% 10%, 20% 20%, 24% 30%, 40% 10%, 54% 29%, 100% 22%, 100% 100%, 0% 100%)
+  }
+  50%
+  {
+    clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 40%, 100% 100%, 0% 100%)
+  }
+}
+
+@media screen and (min-width: 1024px){
+    .wave-title{
+        height: 20vh;
+    }
+    .wave-title > h1{
+        font-size: 3em;
+    }    
+}
