@@ -25,7 +25,6 @@ const Portfolio = () => {
                   src={process.env.PUBLIC_URL + item.imageUrl}
                   alt={item.title} 
                 />
-                <p>je dsu</p>
                 {onHover && 
                   <div 
                     className="row-container"
