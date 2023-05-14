@@ -21,9 +21,9 @@ const Services = () => {
               <Card key={i}>
                 <CardHeader>
                   <h2 className="pricing-title">{card.header.title}</h2>
-                  <div class="pricing-price">
+                  <div className="pricing-price">
                     {card.header.subtitle}
-                    <span class="pricing-currency"> €</span>
+                    <span className="pricing-currency"> €</span>
                     {card.header.price}
                   </div>
                 </CardHeader>

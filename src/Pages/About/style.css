@@ -1,7 +1,5 @@
 #about{
     position: relative;
-    background-image: linear-gradient(to top, rgba(51, 172, 242, .4), rgba(0, 200, 250, 1));
-    background-image: -webkit-linear-gradient(bottom, rgba(51, 172, 242, .4), rgba(255, 255, 255, 0.05)); /* pour les anciennes versions de Safari et Chrome */
 }
 
 #about::before{
@@ -11,7 +9,6 @@
     height: 100%;
     bottom: 0px;
     left: 0;
-    background-image: url('../../../public/img/Wave.gif');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.2;
@@ -31,12 +28,9 @@
     z-index: 1;
 }
 
-.image-container img{
-    filter: drop-shadow(16px 16px 20px var(--light-blue)) invert(30%);
-}
-
 @media screen and (min-width: 1024px){
     .image-container{
         display: block;
+        max-width: 40%;
     }
 }

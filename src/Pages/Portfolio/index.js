@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import gridData from "../../Json/gridData.json"
 import { BsSearch } from "react-icons/bs"
 import "./style.css"
@@ -9,6 +9,14 @@ const Portfolio = () => {
   const [openModal, setOpenModal] = useState(false)
   const [selectedItemId, setSelectedItemId] = useState(null);
 
+  useEffect(() => {
+    if(openModal){
+      document.body.style.overflow = 'hidden'
+    }else{
+      document.body.style.overflow = 'auto'
+    }
+  }, [openModal])
+  
 
   return (
     <div id="portfolio" className="grid-container">
@@ -20,6 +28,10 @@ const Portfolio = () => {
                 className="image-item" 
                 onMouseEnter={() => setOnHover(item.id)}
                 onMouseLeave={() => setOnHover(false)}
+                onClick={() => {
+                  setOpenModal(true) 
+                  setSelectedItemId(item.id)
+                }}
               >
                 <img
                   src={process.env.PUBLIC_URL + item.imageUrl}

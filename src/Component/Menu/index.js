@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import {Link} from "react-router-dom"
 import {RiMenuUnfoldLine, RiArticleLine} from "react-icons/ri"
 import {HiOutlineHome} from "react-icons/hi"
@@ -7,7 +7,9 @@ import {GrServices, GrContactInfo} from "react-icons/gr"
 import {GiAchievement} from "react-icons/gi"
 import "./style.css"
 
-const Menu = ({isActive, setIsActive, setHoveredIndex}) => {
+const Menu = ({isActive, setIsActive, setHoveredIndex, setScrollPosition}) => {
+  const menuToggle = useRef(null)
+  const menuItems = useRef(null)
 
   const scrollToSection = (event, sectionId) => {
     event.preventDefault();
@@ -15,10 +17,33 @@ const Menu = ({isActive, setIsActive, setHoveredIndex}) => {
     section.scrollIntoView({ behavior: "smooth" });
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+      if(position > 0 && window.innerWidth > 1024){
+        menuToggle.current.style.width = '40px'
+        menuToggle.current.style.height = '40px'
+      }else{
+        menuToggle.current.style.width = '60px'
+        menuToggle.current.style.height = '60px'
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
+    
+  }, [])
+
   return (
     <div className={`menu ${isActive ? "active" : ""}`} onClick={() => setIsActive(!isActive)}>
-      <div className='toggle'>
-        <RiMenuUnfoldLine />
+      <div className='toggle' ref={menuToggle}>
+        <RiMenuUnfoldLine value={{className: 'icons-menu'}}/>
       </div>
       <ul>
         <li 
@@ -28,12 +53,14 @@ const Menu = ({isActive, setIsActive, setHoveredIndex}) => {
           }}
           onMouseEnter={() => setHoveredIndex(0)} 
           onMouseLeave={() => setHoveredIndex(null)}
+          ref={menuItems}
         >
           <Link 
-            to="" 
+            to="/" 
             title="Accueil" 
             style={{transform: "rotate(calc(360deg/-8 * 0))"}}
             onClick={(event) => scrollToSection(event, "home")}
+            ref={menuItems}
           >
             <HiOutlineHome />
           </Link>
@@ -47,7 +74,7 @@ const Menu = ({isActive, setIsActive, setHoveredIndex}) => {
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <Link 
-            to="" 
+            to="/" 
             title="À Propos" 
             style={{transform: "rotate(calc(360deg/-8 * 1))"}}
             onClick={(event) => scrollToSection(event, "about")}
@@ -64,7 +91,7 @@ const Menu = ({isActive, setIsActive, setHoveredIndex}) => {
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <Link 
-            to="" 
+            to="/" 
             title="Services" 
             style={{transform: "rotate(calc(360deg/-8 * 2))"}}
             onClick={(event) => scrollToSection(event, "services")}
@@ -82,7 +109,7 @@ const Menu = ({isActive, setIsActive, setHoveredIndex}) => {
           
         >
           <Link 
-            to="portfolio" 
+            to="/" 
             title="Porfolio" 
             style={{transform: "rotate(calc(360deg/-8 * 3))"}}
             onClick={(event) => scrollToSection(event, "portfolio")}
@@ -99,7 +126,7 @@ const Menu = ({isActive, setIsActive, setHoveredIndex}) => {
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <Link 
-            to={{hash: "#contact"}}   
+            to='/'  
             title="Contact" 
             style={{transform: "rotate(calc(360deg/-8 * 4))"}}
             onClick={(event) => scrollToSection(event, "contact")}
@@ -115,7 +142,7 @@ const Menu = ({isActive, setIsActive, setHoveredIndex}) => {
           onMouseEnter={() => setHoveredIndex(5)} 
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <Link to="" title='Blog' style={{ transform: "rotate(calc(360deg/-8 * 5))"}}>
+          <Link to="/blog" title='Blog' style={{ transform: "rotate(calc(360deg/-8 * 5))"}}>
             <RiArticleLine />
           </Link>
         </li>

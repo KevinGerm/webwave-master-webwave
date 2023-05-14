@@ -37,15 +37,12 @@ body{
   position: relative;
   font-family: 'Open Sans', sans-serif; 
   overflow-x: hidden;
-  color: var(--deep-white);
-  background-color: var(--deep-purple);
 }
 
 h1, h2, h3{
   font-family: 'Quicksand', serif;
   padding: 10px 0;
   text-transform: uppercase;
-  color: var(--deep-black);
   text-align: center;
 }
 
@@ -62,6 +59,11 @@ h3{
 p{
   text-align: justify;
   line-height: 22px;
+  padding: 0 10px;
+}
+
+p.p-center{
+  text-align: center;
 }
 
 ul{
@@ -83,6 +85,7 @@ main{
   min-height: 100vh;
   padding-top: 140px;
 }
+
 main > div:first-child{
   padding: 0;
 }
@@ -104,10 +107,8 @@ main > div{
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.row-container > div, .col-container > div{
-  margin: 20px 20px 0px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .row-container{
@@ -116,6 +117,15 @@ main > div{
 
 .col-container{
   flex-direction: column;
+}
+
+.col-container.home{
+  padding-top: 10px;
+}
+
+
+.row-container > div{
+  margin: 10px;
 }
 
 .carac{
@@ -189,8 +199,21 @@ main > div{
   main{
     padding-top: 90px;
   }
+
+  #contact > .row-container{
+    flex-wrap: wrap;
+  }
+
   .row-container{
     flex-wrap: nowrap;
+  }
+
+  .col-container.home{
+    padding-top: 0px;
+  }
+
+  .col-container > div{
+    margin: 10px 0;
   }
   
   .grid-container{
@@ -199,6 +222,17 @@ main > div{
 }
 
 @media screen and (min-width: 1440px){
+  #contact > .row-container{
+    flex-wrap: nowrap;
+  }
+  #contact > .row-container > div{
+    margin: 0 30px;
+  }
+
+  #contact > .row-container > div:first-child{
+    width: 50%;
+  }
+
   .grid-container{
     grid-template-columns: repeat(4, 1fr);
   }  

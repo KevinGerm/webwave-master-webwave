@@ -13,7 +13,6 @@
     position: relative;
     height: 35px;
     width: 35px;
-    background: var(--deep-white);
     color: var(--black);
     border-radius: 50%;
     box-shadow: 0 3px 4px rgba(34, 116, 165, 0.25);
@@ -24,6 +23,10 @@
     font-size: 1.5em;
     transition: 1.25s;
     z-index: 1000;
+}
+
+.icons-menu{
+    color: var(--deep-white);
 }
 
 .menu.active .toggle{
@@ -103,11 +106,17 @@
         width: 280px;
         height: 280px;
     }
+
     .menu .toggle{
         height: 60px;
         width: 60px;
         cursor: pointer;
         font-size: 2em;
+    }
+
+    .menu .toggle svg{
+        width: 70%;
+        height: 70%;
     }
 
     .menu ul li{

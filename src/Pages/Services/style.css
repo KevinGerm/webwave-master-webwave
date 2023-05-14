@@ -1,7 +1,5 @@
 #services{
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(51, 172, 242, .4), rgba(0, 200, 250, 1));
-    background-image: -webkit-linear-gradient(top, rgba(51, 172, 242, .4), rgba(255, 255, 255, 0.05)); /* pour les anciennes versions de Safari et Chrome */
     font-size: 100%;
     min-height: 100%;
     line-height: 1.5;

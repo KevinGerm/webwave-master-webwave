@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="row-container">
-        <div className="col-container" style={{width: "45%"}}>
+        <div className="col-container">
           <div className="row-container">
             <div className="col-container carac">
               <span>Adresse</span>
@@ -39,16 +39,16 @@ const Contact = () => {
         <form>
           <h3>Besoin d'un devis?</h3>
           <div className="row-container">
-            <input type="text" placeholder="Nom"/>
+            <input className="form-input" type="text" placeholder="Nom"/>
           </div>
           <div className="row-container">
-            <input placeholder="Prénom" type="text" />
+            <input className="form-input" placeholder="Prénom" type="text" />
           </div>
           <div className="row-container">
-            <input placeholder="Email" type="email" />
+            <input className="form-input" placeholder="Email" type="email" />
           </div>
           <div className="row-container">
-            <input placeholder="Téléphone" type="text" />
+            <input className="form-input" placeholder="Téléphone" type="text" />
           </div>
           <div className="row-container">
             <textarea placeholder="Message" />

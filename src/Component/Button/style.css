@@ -12,8 +12,8 @@
     height: auto;
     background: transparent;
     color: var(--deep-black);
-    -webkit-text-stroke: 1px var(--deep-black);
     padding: 0;
+    font-weight: 700;
     border: none;
     cursor: pointer;
     transition: opacity 500ms;

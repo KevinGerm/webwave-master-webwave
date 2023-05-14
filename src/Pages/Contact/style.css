@@ -5,32 +5,26 @@
 
 form{
     width: 100%;
-    max-width: 500px;
-    background-color: rgba(255, 255, 255, 0.15);   
-    box-shadow: 0 0 10px 1px rgba(20, 129, 186, 0.25);
-    backdrop-filter: blur(15px);
-    border-radius: 15px;
-    margin-left: 30px;
+    
 }
 
 form > div{
-    margin: 15px;
     padding: 5px;
 }
 
-input{
+.form-input{
     height: 50px;
 }
 
-input, textarea{
-    min-width: 300px;
+.form-input, textarea{
+    min-width: 225px;
     border: initial;
     border-bottom: 1px solid var(--deep-blue);
     background-color: transparent;
     transition: all 250ms;
 }
 
-input:focus, textarea:focus{
+form-input:focus, textarea:focus{
     outline: none;
     border-bottom: 1px solid var(--light-blue);
     transition: all 250ms;
@@ -41,7 +35,22 @@ textarea{
 }
 
 @media screen and (min-width: 1024px){
+    .form-input, textarea{
+        min-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1440px){
     form{
         width: 45%;
+        background-color: rgba(255, 255, 255, 0.15);   
+        box-shadow: 0 0 10px 1px rgba(20, 129, 186, 0.25);
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        
+    }
+
+    .form-input, textarea{
+        min-width: 70%;
     }
 }

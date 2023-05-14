@@ -1,13 +1,14 @@
 import React from "react";
 import Button from "../../Component/Button";
 import WaveTitle from "../../Component/WaveTitle";
+import './style.css'
 
 const HeroArea = () => {
   return (
-    <div id="home" className="col-container">
+    <div id="home" className="col-container animate__animated animate__fadeIn">
     <WaveTitle>Surfez vers votre succès avec Web Wave</WaveTitle> 
-      <div className="col-container">
-        <p>
+      <div className="col-container home">
+        <p className="p-center">
           Création de sites web sur mesure pour une expérience utilisateur
           unique
         </p>
